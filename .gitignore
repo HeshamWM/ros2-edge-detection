@@ -1,0 +1,26 @@
+# ROS 2 build & install directories
+build/
+install/
+log/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# VS Code (contains machine-specific compiler/conda paths)
+.vscode/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Conda environment backups / local envs (if created inside workspace)
+.conda/
+env/
+venv/
+.venv/

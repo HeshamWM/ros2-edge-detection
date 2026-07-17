@@ -1,0 +1,21 @@
+edge_detector:
+  ros__parameters:
+    # --- Algorithm selection ---
+    # Options: "canny", "sobel", "laplacian"
+    algorithm: "canny"
+
+    # --- Canny parameters ---
+    canny_low_threshold: 50
+    canny_high_threshold: 150
+
+    # --- Sobel / Laplacian parameters ---
+    sobel_kernel_size: 3       # must be 1, 3, 5, or 7
+
+    # --- Preprocessing ---
+    target_width: 640          # downscale input to this width (0 = no resize)
+
+    # --- Performance ---
+    max_fps: 15.0              # throttle processing to this rate
+
+    # --- Diagnostics ---
+    publish_diagnostics: true
