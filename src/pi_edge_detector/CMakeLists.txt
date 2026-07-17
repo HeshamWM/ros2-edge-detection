@@ -83,9 +83,6 @@ install(DIRECTORY config/
 
 # ---------- Testing ----------
 if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  ament_lint_auto_find_test_dependencies()
-
   find_package(ament_cmake_gtest REQUIRED)
 
   ament_add_gtest(test_edge_algorithms test/test_edge_algorithms.cpp
