@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>pi_yolov26_detector</name>
+  <version>0.1.0</version>
+  <description>
+    YOLOv26 based real-time object detection node running on CPU,
+    optimized for edge/embedded platforms like Raspberry Pi.
+  </description>
+  <maintainer email="hesham@todo.com">hesham</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Core ROS 2 -->
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+
+  <!-- Messages -->
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+
+  <!-- Image pipeline -->
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+
+  <!-- OpenCV (system dependency) -->
+  <depend>OpenCV</depend>
+
+  <!-- Testing -->
+  <test_depend>ament_cmake_gtest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

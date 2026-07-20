@@ -1,0 +1,14 @@
+yolov26_detector:
+  ros__parameters:
+    # --- Model settings ---
+    model_path: "models/yolov8n.onnx"   # Path to the exported ONNX model
+    confidence_threshold: 0.25         # Minimum probability to screen out weak detections
+
+    # --- Preprocessing ---
+    target_width: 640                  # Resize input to this width before running model (0 = no resize)
+
+    # --- Performance ---
+    max_fps: 10.0                      # Throttle processing to this rate (optimized for CPU running YOLO)
+
+    # --- Diagnostics ---
+    publish_diagnostics: true
